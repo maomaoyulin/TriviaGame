@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Trivia Game</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets\css\reset.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\style.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab|Yellowtail' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <h1 class="text-center"><strong>BIG CITY, NICKNAME!</strong></h1>
+
+        <br>
+
+        <div id="game">
+
+            <div class="beginningPage">
+                <button id="start"><strong>Start!</strong></button>
+            </div>
+
+            <!-- <div class="questionPages">
+
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Time Remaining:</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="text-center" id="countdown">
+                        </div>
+                    </div>
+                </div> -->
+
+                <div id="one">
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Time Remaining:</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="text-center" id="countdown">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="q1">
+                        <img id="nyc" src="assets/images/NYC.jpg" width="200px" height="150px" />
+                        <br><br>
+                        <strong>1. The Big Apple.</strong>
+                        <br>
+                        <label class="radio-inline"><input type="radio" name="optradio">Phoenix</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">New York City</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Denver</label>
+                    </div>
+                    <br><br>
+                    <div id="q2">
+                        <img id="chicago" src="assets/images/Chicago.jpg" width="200px" height="150px" />
+                        <br><br>
+                        <strong>2. Windy City.</strong>
+                        <br>
+                        <label class="radio-inline"><input type="radio" name="optradio">Chicago</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Juneau</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Boston</label>
+                    </div>
+                    <br><br>
+                    <div id="q3">
+                        <img id="detroit" src="assets/images/Detroit.jpg" width="200px" height="150px" />
+                        <br><br>
+                        <strong>3. Motor City.</strong>
+                        <br>
+                        <label class="radio-inline"><input type="radio" name="optradio">Lansing</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">New York City</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Detroit</label>
+                    </div>
+                    <br><br>
+                    <div id="q4">
+                        <img id="orleans" src="assets/images/Orleans.png" width="240px" height="150px" />
+                        <br><br>
+                        <strong>4. The Big Easy.</strong>
+                        <br>
+                        <label class="radio-inline"><input type="radio" name="optradio">New Orleans</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">New York City</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Cleveland</label>
+                    </div>
+                    <br><br>
+                    <div id="q5">
+                        <img id="atlantic" src="assets/images/Atlantic.jpg" width="400px" height="150px" />
+                        <br><br>
+                        <strong>5. Always Turned On.</strong>
+                        <br>
+                        <label class="radio-inline"><input type="radio" name="optradio">Las Vegas</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Los Angeles</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Atlantic City</label>
+                    </div>
+                    
+                    <br><br>
+
+                    <div class="nextPage">
+                        <button id="next"><strong>Next Page</strong></button>
+                    </div>
+
+                </div>
+
+                <div id="two">
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Time Remaining:</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="text-center" id="countdown">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="q6">
+                        <img id="lv" src="assets/images/Las.jpg" width="200px" height="150px" />
+                        <br><br>
+                        <strong>6. Sin City.</strong>
+                        <br>
+                        <label class="radio-inline"><input type="radio" name="optradio">Las Vegas</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">New York City</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Chicago</label>
+                    </div>
+                    <br><br>
+                    <div id="q7">
+                        <img id="hershey" src="assets/images/Hershey.jpg" width="250px" height="150px" />
+                        <br><br>
+                        <strong>7. The Sweetest Place on Earth.</strong>
+                        <br>
+                        <label class="radio-inline"><input type="radio" name="optradio">Dover</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Santa Cruz</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Hershey</label>
+                    </div>
+                    <br><br>
+                    <div id="q8">
+                        <img id="pittsburgh" src="assets/images/Pittsburgh.jpg" width="200px" height="150px" />
+                        <br><br>
+                        <strong>8. The Steel City.</strong>
+                        <br>
+                        <label class="radio-inline"><input type="radio" name="optradio">Ironton</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Pittsburgh</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Detroit</label>
+                    </div>
+                    <br><br>
+                    <div id="q9">
+                        <img id="bos" src="assets/images/Boston.jpg" width="400px" height="150px" />
+                        <br><br>
+                        <strong>9. Athens of America.</strong>
+                        <br>
+                        <label class="radio-inline"><input type="radio" name="optradio">Columbus</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Princeton</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Boston</label>
+                    </div>
+                    <br>
+                    <div id="q10">
+                        <img id="los" src="assets/images/Los.jpg" width="200px" height="150px" />
+                        <br><br>
+                        <strong>10. City of the Angels.</strong>
+                        <br>
+                        <label class="radio-inline"><input type="radio" name="optradio">Los Angeles</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">New York City</label>
+                        <label class="radio-inline"><input type="radio" name="optradio">Oakland</label>
+                    </div>
+
+                    <br><br>
+                    
+                    <div class="submit">
+                        <button id="submit"><strong>Submit</strong></button>
+                    </div>
+
+                </div>
+                <div id="three">
+
+                </div>
+            </div>
+
+            <div class="score">
+                <div id="levelImages"></div>
+                <h2>Please Check Your Score:</h2>
+                <div id="scoreDetails">
+                    <div id="corret">
+                        <p>Corret Answers: <div id="correntNum"></div></p>
+                    </div>
+                    <div id="incorret">
+                        <p>Incorret Answers: <div id="incorrentNum"></div></p>
+                    </div>
+                    <div id="unanswered">
+                        <p>unanswered Answers: <div id="unansweredNum"></div></p>
+                    </div>
+                </div>
+                
+            </div>
+
+        <!-- </div> -->
+    </div>
+    <script src="assets\javascript\app.js"></script>
+</body>
+</html>
