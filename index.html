@@ -30,7 +30,7 @@
                 <button id="start"><strong>Start!</strong></button>
             </div>
 
-            <!-- <div class="questionPages">
+            <div class="questionPages">
 
                 <div class="panel panel-primary">
                     <div class="panel-heading">
@@ -40,28 +40,18 @@
                         <div class="text-center" id="countdown">
                         </div>
                     </div>
-                </div> -->
+                </div>
 
                 <div id="one">
-
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Time Remaining:</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="text-center" id="countdown">
-                            </div>
-                        </div>
-                    </div>
 
                     <div id="q1">
                         <img id="nyc" src="assets/images/NYC.jpg" width="200px" height="150px" />
                         <br><br>
                         <strong>1. The Big Apple.</strong>
                         <br>
-                        <label class="radio-inline"><input type="radio" name="optradio">Phoenix</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">New York City</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Denver</label>
+                        <label class="radio-inline"><input type="radio" name="question1" value="0">Phoenix</label>
+                        <label class="radio-inline"><input type="radio" name="question1" value="1">New York City</label>
+                        <label class="radio-inline"><input type="radio" name="question1" value="0">Denver</label>
                     </div>
                     <br><br>
                     <div id="q2">
@@ -69,9 +59,9 @@
                         <br><br>
                         <strong>2. Windy City.</strong>
                         <br>
-                        <label class="radio-inline"><input type="radio" name="optradio">Chicago</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Juneau</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Boston</label>
+                        <label class="radio-inline"><input type="radio" name="question2" value="1">Chicago</label>
+                        <label class="radio-inline"><input type="radio" name="question2" value="0">Juneau</label>
+                        <label class="radio-inline"><input type="radio" name="question2" value="0">Boston</label>
                     </div>
                     <br><br>
                     <div id="q3">
@@ -79,9 +69,9 @@
                         <br><br>
                         <strong>3. Motor City.</strong>
                         <br>
-                        <label class="radio-inline"><input type="radio" name="optradio">Lansing</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">New York City</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Detroit</label>
+                        <label class="radio-inline"><input type="radio" name="question3" value="0">Lansing</label>
+                        <label class="radio-inline"><input type="radio" name="question3" value="0">New York City</label>
+                        <label class="radio-inline"><input type="radio" name="question3" value="1">Detroit</label>
                     </div>
                     <br><br>
                     <div id="q4">
@@ -89,9 +79,9 @@
                         <br><br>
                         <strong>4. The Big Easy.</strong>
                         <br>
-                        <label class="radio-inline"><input type="radio" name="optradio">New Orleans</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">New York City</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Cleveland</label>
+                        <label class="radio-inline"><input type="radio" name="question4" value="1">New Orleans</label>
+                        <label class="radio-inline"><input type="radio" name="question4" value="0">New York City</label>
+                        <label class="radio-inline"><input type="radio" name="question4" value="0">Cleveland</label>
                     </div>
                     <br><br>
                     <div id="q5">
@@ -99,9 +89,9 @@
                         <br><br>
                         <strong>5. Always Turned On.</strong>
                         <br>
-                        <label class="radio-inline"><input type="radio" name="optradio">Las Vegas</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Los Angeles</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Atlantic City</label>
+                        <label class="radio-inline"><input type="radio" name="question5" value="0">Las Vegas</label>
+                        <label class="radio-inline"><input type="radio" name="question5" value="0">Los Angeles</label>
+                        <label class="radio-inline"><input type="radio" name="question5" value="1">Atlantic City</label>
                     </div>
                     
                     <br><br>
@@ -114,24 +104,14 @@
 
                 <div id="two">
 
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Time Remaining:</h3>
-                        </div>
-                        <div class="panel-body">
-                            <div class="text-center" id="countdown">
-                            </div>
-                        </div>
-                    </div>
-
                     <div id="q6">
                         <img id="lv" src="assets/images/Las.jpg" width="200px" height="150px" />
                         <br><br>
                         <strong>6. Sin City.</strong>
                         <br>
-                        <label class="radio-inline"><input type="radio" name="optradio">Las Vegas</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">New York City</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Chicago</label>
+                        <label class="radio-inline"><input type="radio" name="question6" value="1">Las Vegas</label>
+                        <label class="radio-inline"><input type="radio" name="question6" value="0">New York City</label>
+                        <label class="radio-inline"><input type="radio" name="question6" value="0">Chicago</label>
                     </div>
                     <br><br>
                     <div id="q7">
@@ -139,9 +119,9 @@
                         <br><br>
                         <strong>7. The Sweetest Place on Earth.</strong>
                         <br>
-                        <label class="radio-inline"><input type="radio" name="optradio">Dover</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Santa Cruz</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Hershey</label>
+                        <label class="radio-inline"><input type="radio" name="question7" value="0">Dover</label>
+                        <label class="radio-inline"><input type="radio" name="question7" value="0">Santa Cruz</label>
+                        <label class="radio-inline"><input type="radio" name="question7" value="1">Hershey</label>
                     </div>
                     <br><br>
                     <div id="q8">
@@ -149,9 +129,9 @@
                         <br><br>
                         <strong>8. The Steel City.</strong>
                         <br>
-                        <label class="radio-inline"><input type="radio" name="optradio">Ironton</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Pittsburgh</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Detroit</label>
+                        <label class="radio-inline"><input type="radio" name="question8" value="0">Ironton</label>
+                        <label class="radio-inline"><input type="radio" name="question8" value="1">Pittsburgh</label>
+                        <label class="radio-inline"><input type="radio" name="question8" value="0">Detroit</label>
                     </div>
                     <br><br>
                     <div id="q9">
@@ -159,9 +139,9 @@
                         <br><br>
                         <strong>9. Athens of America.</strong>
                         <br>
-                        <label class="radio-inline"><input type="radio" name="optradio">Columbus</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Princeton</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Boston</label>
+                        <label class="radio-inline"><input type="radio" name="question9" value="0">Columbus</label>
+                        <label class="radio-inline"><input type="radio" name="question9" value="0">Princeton</label>
+                        <label class="radio-inline"><input type="radio" name="question9" value="1">Boston</label>
                     </div>
                     <br>
                     <div id="q10">
@@ -169,9 +149,9 @@
                         <br><br>
                         <strong>10. City of the Angels.</strong>
                         <br>
-                        <label class="radio-inline"><input type="radio" name="optradio">Los Angeles</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">New York City</label>
-                        <label class="radio-inline"><input type="radio" name="optradio">Oakland</label>
+                        <label class="radio-inline"><input type="radio" name="question10" value="1">Los Angeles</label>
+                        <label class="radio-inline"><input type="radio" name="question10" value="0">New York City</label>
+                        <label class="radio-inline"><input type="radio" name="question10" value="0">Oakland</label>
                     </div>
 
                     <br><br>

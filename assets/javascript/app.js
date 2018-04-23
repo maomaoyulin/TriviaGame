@@ -1,21 +1,26 @@
 $(document).ready(function() {
     var main = $("body");
 
-    // $(".questionPages").hide();
+    var correctAns = 0;
+    var incorrectAns = 0;
+    var unanswered = 0;
+
     $(".score").hide();
-    $("#one").hide();
-    $("#two").hide();
+    $(".questionPages").hide();
 
     $("#start").click(function() {
 
         $("#start").hide();
-        $('#one').show();
-
+        $(".questionPages").show();
+        $('#two').hide();
+        
         run();
 
     });
 
     $(".nextPage").click(function() {
+
+        calulate()
 
         $("#one").hide();
         $('#two').show();
@@ -24,16 +29,22 @@ $(document).ready(function() {
 
     $(".submit").click(function() {
 
+        stop();
+        calulate()
+
         $("#two").hide();
         $('.score').show();
+        $(".questionPages").hide();
+
+        $("#correntNum").text(correctAns);
+        $("#incorrentNum").text(incorrectAns);
+        $("#unansweredNum").text(unanswered);
 
     });
 
-
-
     // ------------------Timer--------------------------
     
-    var number = 60;
+    var number = 90;
     var intervalId;
 
     function run() {
@@ -65,14 +76,29 @@ $(document).ready(function() {
       clearInterval(intervalId);
     }
 
+    function calulate() {
+
+        var answerStatus = $('input[name="question1"]:checked');
+        var answerVal = answerStatus.val();
+        var answerChecked = answerStatus.length;
+    
+        if(answerChecked == 0){
+            unanswered++;
+        }else{
+            if(answerVal == "1") {
+                correctAns++;
+            }else if(answerVal == "0"){
+                incorrectAns++;
+            }
+        }
+        
+    }
+
+    console.log(correctAns);
+    console.log(incorrectAns);
+    console.log(unanswered);
+
     
 })
 
-$(document).ready(function(){
- 
-    $('.radio-inlion').change(function(){
-        selected_value = $("input[name='my_options']:checked").val();
-        alert(selected_value);
-    });
 
-});
