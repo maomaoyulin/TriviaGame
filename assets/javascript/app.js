@@ -20,7 +20,11 @@ $(document).ready(function() {
 
     $(".nextPage").click(function() {
 
-        calulate()
+        calulate1();
+        calulate2();
+        calulate3();
+        calulate4();
+        calulate5();
 
         $("#one").hide();
         $('#two').show();
@@ -30,7 +34,12 @@ $(document).ready(function() {
     $(".submit").click(function() {
 
         stop();
-        calulate()
+        
+        calulate6();
+        calulate7();
+        calulate8();
+        calulate9();
+        calulate10();
 
         $("#two").hide();
         $('.score').show();
@@ -76,7 +85,7 @@ $(document).ready(function() {
       clearInterval(intervalId);
     }
 
-    function calulate() {
+    function calulate1() {
 
         var answerStatus = $('input[name="question1"]:checked');
         var answerVal = answerStatus.val();
@@ -98,6 +107,167 @@ $(document).ready(function() {
     console.log(incorrectAns);
     console.log(unanswered);
 
+    function calulate2() {
+
+        var answerStatus = $('input[name="question2"]:checked');
+        var answerVal = answerStatus.val();
+        var answerChecked = answerStatus.length;
+    
+        if(answerChecked == 0){
+            unanswered++;
+        }else{
+            if(answerVal == "1") {
+                correctAns++;
+            }else if(answerVal == "0"){
+                incorrectAns++;
+            }
+        }
+        
+    }
+
+    function calulate3() {
+
+        var answerStatus = $('input[name="question3"]:checked');
+        var answerVal = answerStatus.val();
+        var answerChecked = answerStatus.length;
+    
+        if(answerChecked == 0){
+            unanswered++;
+        }else{
+            if(answerVal == "1") {
+                correctAns++;
+            }else if(answerVal == "0"){
+                incorrectAns++;
+            }
+        }
+        
+    }
+
+    function calulate4() {
+
+        var answerStatus = $('input[name="question4"]:checked');
+        var answerVal = answerStatus.val();
+        var answerChecked = answerStatus.length;
+    
+        if(answerChecked == 0){
+            unanswered++;
+        }else{
+            if(answerVal == "1") {
+                correctAns++;
+            }else if(answerVal == "0"){
+                incorrectAns++;
+            }
+        }
+        
+    }
+
+    function calulate5() {
+
+        var answerStatus = $('input[name="question5"]:checked');
+        var answerVal = answerStatus.val();
+        var answerChecked = answerStatus.length;
+    
+        if(answerChecked == 0){
+            unanswered++;
+        }else{
+            if(answerVal == "1") {
+                correctAns++;
+            }else if(answerVal == "0"){
+                incorrectAns++;
+            }
+        }
+        
+    }
+
+    function calulate6() {
+
+        var answerStatus = $('input[name="question6"]:checked');
+        var answerVal = answerStatus.val();
+        var answerChecked = answerStatus.length;
+    
+        if(answerChecked == 0){
+            unanswered++;
+        }else{
+            if(answerVal == "1") {
+                correctAns++;
+            }else if(answerVal == "0"){
+                incorrectAns++;
+            }
+        }
+        
+    }
+
+    function calulate7() {
+
+        var answerStatus = $('input[name="question7"]:checked');
+        var answerVal = answerStatus.val();
+        var answerChecked = answerStatus.length;
+    
+        if(answerChecked == 0){
+            unanswered++;
+        }else{
+            if(answerVal == "1") {
+                correctAns++;
+            }else if(answerVal == "0"){
+                incorrectAns++;
+            }
+        }
+        
+    }
+
+    function calulate8() {
+
+        var answerStatus = $('input[name="question8"]:checked');
+        var answerVal = answerStatus.val();
+        var answerChecked = answerStatus.length;
+    
+        if(answerChecked == 0){
+            unanswered++;
+        }else{
+            if(answerVal == "1") {
+                correctAns++;
+            }else if(answerVal == "0"){
+                incorrectAns++;
+            }
+        }
+        
+    }
+
+    function calulate9() {
+
+        var answerStatus = $('input[name="question9"]:checked');
+        var answerVal = answerStatus.val();
+        var answerChecked = answerStatus.length;
+    
+        if(answerChecked == 0){
+            unanswered++;
+        }else{
+            if(answerVal == "1") {
+                correctAns++;
+            }else if(answerVal == "0"){
+                incorrectAns++;
+            }
+        }
+        
+    }
+
+    function calulate10() {
+
+        var answerStatus = $('input[name="question10"]:checked');
+        var answerVal = answerStatus.val();
+        var answerChecked = answerStatus.length;
+    
+        if(answerChecked == 0){
+            unanswered++;
+        }else{
+            if(answerVal == "1") {
+                correctAns++;
+            }else if(answerVal == "0"){
+                incorrectAns++;
+            }
+        }
+        
+    }
     
 })
 
